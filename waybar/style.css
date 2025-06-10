@@ -24,7 +24,7 @@ window#waybar {
     background-color: rgba(43, 48, 59, 0.5);
     color: #ffffff;
     transition-property: background-color;
-    transition-duration: .5s;
+    transition-duration: 0.5s;
 }
 
 label.module {
@@ -92,7 +92,7 @@ button {
 }
 
 #workspaces button.focused {
-    background-color: #64727D;
+    background-color: #64727d;
     box-shadow: inset 0 -3px #ffffff;
 }
 
@@ -105,10 +105,9 @@ button {
  * ----------------------------------------------------- */
 
 #clock {
-    background-color: #64727D;
+    background-color: #64727d;
     border: 2px solid white;
 }
-
 
 /* -----------------------------------------------------
  * Battery
@@ -119,7 +118,8 @@ button {
     color: #000000;
 }
 
-#battery.charging, #battery.plugged {
+#battery.charging,
+#battery.plugged {
     color: #000000;
     background-color: #ffffff;
 }
@@ -173,7 +173,9 @@ label:focus {
  * Hardware Group
  * ----------------------------------------------------- */
 
-#cpu, #memory, #temperature {
+#cpu,
+#memory,
+#temperature {
     color: #b4dbdb;
     padding: 0 0px;
 }
@@ -187,7 +189,7 @@ label:focus {
 }
 
 #disk {
-    background-color: #964B00;
+    background-color: #964b00;
 }
 
 /* -----------------------------------------------------
@@ -235,7 +237,7 @@ label:focus {
  * ----------------------------------------------------- */
 
 #tray {
-    background-color: #64727D;
+    background-color: #64727d;
     border: 2px solid white;
     border-radius: 16px;
     margin: 5px 0 5px 0;
@@ -292,6 +294,6 @@ label:focus {
  * Power button
  * ----------------------------------------------------- */
 
- #custom-power {
+#custom-power {
     font-size: 13px;
 }
