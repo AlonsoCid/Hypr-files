@@ -147,6 +147,7 @@
       "reboot": "reboot",
       "suspend": "systemctl suspend",
       "hibernate": "systemctl hibernate",
+      "lock": "hyprlock",
     },
   },
 }
