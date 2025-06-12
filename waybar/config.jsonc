@@ -79,7 +79,7 @@
     "tooltip": false,
   },
   "memory": {
-    "format": "  {}% / ",
+    "format": "  {}% / ",
   },
   "temperature": {
     "critical-threshold": 80,
@@ -123,8 +123,8 @@
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
     "format": "{icon}  {volume}%",
-    "format-bluetooth": "{volume}% {icon}  {format_source}",
-    "format-bluetooth-muted": " {icon}  {format_source}",
+    "format-bluetooth": "{icon}  {volume}%",
+    "format-bluetooth-muted": " {icon}  {volume}%",
     "format-muted": "  {volume}%",
     "format-icons": {
       "headphone": "",
