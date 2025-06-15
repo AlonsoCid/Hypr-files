@@ -21,7 +21,7 @@
 }
 
 window#waybar {
-    background-color: rgba(43, 48, 59, 0.5);
+    background-color: rgba(43, 48, 59, 0.4);
     color: #ffffff;
     transition-property: background-color;
     transition-duration: 0.5s;
@@ -105,7 +105,7 @@ button {
  * ----------------------------------------------------- */
 
 #clock {
-    background-color: #64727d;
+    background-color: rgba(166, 201, 235, 0.5);
     border: 2px solid white;
 }
 
@@ -237,7 +237,7 @@ label:focus {
  * ----------------------------------------------------- */
 
 #tray {
-    background-color: #64727d;
+    background-color: rgba(166, 201, 235, 0.5);
     border: 2px solid white;
     border-radius: 16px;
     margin: 5px 0 5px 0;
