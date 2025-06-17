@@ -1,0 +1,140 @@
+/*
+Rofi configuration
+*/
+
+* {
+    white:#ffffff;
+    dark:#0f0f0f;
+    red:#ea6962;
+    red-alt:#ca3433;
+    orange:#e78a4e;
+    yellow:#d8a657;
+    blue:#7daea3;
+    green:#a9a665;
+    aqua:#89b482;
+    cream:#d4be98;
+    grey:#504945;
+    dark-grey:#202020;
+    transparent:#00000000;
+    highlight:underline bold #ca3433;
+    text:underline bold #3a4b5c;
+    bg1: #7daea350;
+    bg2: #e6eff6;
+    bg3: #ccdbe9;
+    hl: #85b6e1;
+
+    padding:0;
+    margin:0;
+    border:0;
+    border-radius:0;
+    spacing:0;
+    vertical-align: 0.5;
+
+    text-color: @text;
+    border-color:@white;
+    background-color:@transparent;
+
+    font:"Roboto Condensed Bold 11";
+}
+
+configuration {
+    modes: "drun,calc";
+    /*display-drun: " Apps ";*/
+    show-icons: true;
+}
+
+window {
+    width: 25%;
+    location: center;
+    background-color: @bg1;
+    orientaion: horizontal;
+    border-radius: 10px;
+}
+
+mainbox {
+    children: [inputbar, message,listview];
+}
+
+inputbar {
+    margin: 8px 8px 3px 8px;
+    background-color: @white;
+    border-radius: 16;
+    children: [prompt,entry];
+}
+
+prompt {
+    padding: 5px;
+    margin: 2px;
+    background-color: @bg2;
+    font:"Roboto Condensed Bold 13";
+    border-radius: 16px 0 0 16px;
+}
+
+entry {
+    padding:5px;
+    margin:2px;
+    border-color:@grey;
+    background-color:@bg2;
+    font:"Roboto Condensed Bold 13";
+    border-radius: 0 16px 16px 0;
+}
+
+listview {
+    lines:10;
+    padding:8px;
+    border: 2px;
+    border-radius: 10;
+    margin:8px;
+    background-color:@bg2;
+    children:[element];
+}
+
+element {
+    padding:2px;
+}
+
+element-text {
+    size:1em;
+    padding:4px;
+    margin:0px;
+    text-color:inherit;
+}
+
+element-icon{
+    padding:4px;
+    margin:1px;
+    size:1em;
+}
+
+element selected {
+    background-color: @hl;
+}
+
+element selected active {
+    background-color: @red-alt;
+}
+
+message {
+    expand:true;
+    children: [textbox];
+}
+
+
+textbox {
+    expand: true;
+    padding:10px;
+    background-color:@bg3;
+
+    border: 2px;
+    border-radius: 10;
+    margin:8px;
+}
+
+
+error-message {
+    expand: true;
+    border: 2px;
+    padding:5px;
+    background-color: @dark-grey;
+    text-color:@dark;
+}
