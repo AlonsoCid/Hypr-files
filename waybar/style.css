@@ -105,7 +105,7 @@ button {
  * ----------------------------------------------------- */
 
 #clock {
-    background-color: rgba(166, 201, 235, 0.5);
+    background-color: rgba(70, 130, 180, 0.5);
     border: 2px solid white;
 }
 
@@ -237,7 +237,7 @@ label:focus {
  * ----------------------------------------------------- */
 
 #tray {
-    background-color: rgba(166, 201, 235, 0.5);
+    background-color: rgba(70, 130, 180, 0.5);
     border: 2px solid white;
     border-radius: 16px;
     margin: 5px 0 5px 0;
@@ -295,5 +295,6 @@ label:focus {
  * ----------------------------------------------------- */
 
 #custom-power {
+    padding-right: 5px;
     font-size: 13px;
 }
