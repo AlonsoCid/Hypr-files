@@ -13,6 +13,7 @@ At the moment the installation should be done manually by cloning the repo and p
 - Basics: hyprland, dunst, pipewire, xdg-desktop-portal-hyprland, hyprpolkitagent, qt5-wayland and qt6-wayland. (Just follow the [hyprland wiki](https://wiki.hypr.land/Useful-Utilities/Must-have/))
 - Status bar: [Waybar](https://github.com/Alexays/Waybar/wiki/Module:-Hyprland)
 - [hyp-ecosistem](https://wiki.hypr.land/Hypr-Ecosystem/): [hyprpaper](https://wiki.hypr.land/Hypr-Ecosystem/hyprpaper/), [hypridle](https://wiki.hypr.land/Hypr-Ecosystem/hypridle/) and [hyprlock](https://wiki.hypr.land/Hypr-Ecosystem/hyprlock/)
+- App-launcher: Rofi and rofi-calc
 - [Bluethoot](https://wiki.archlinux.org/title/Bluetooth): bluez, bluez-utils and blueman (require manual configuration through the terminal in Arch)
 - [NetworkManager](https://wiki.archlinux.org/title/NetworkManager): networkmanager and network-manager-applet
 - Screenshots: grim, slurp and swappy

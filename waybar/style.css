@@ -256,14 +256,13 @@ label:focus {
  * Idle inhibitor
  * ----------------------------------------------------- */
 
-#idle_inhibitor {
-    background-color: #2d3436;
+/*#idle_inhibitor {
+    border: 2px solid white;
 }
 
 #idle_inhibitor.activated {
-    background-color: #ecf0f1;
-    color: #2d3436;
-}
+    background-color: rgba(70, 130, 180, 0.5);
+}*/
 
 /* -----------------------------------------------------
  * Privacy indicator

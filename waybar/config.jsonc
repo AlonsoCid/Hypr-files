@@ -19,8 +19,8 @@
   "modules-left": ["hyprland/workspaces", "group/hardware"],
   "modules-center": ["hyprland/window"],
   "modules-right": [
+    // "idle_inhibitor",
     "custom/stats",
-    //"iddle_inhibitor"
     "pulseaudio",
     "power-profiles-daemon",
     "battery",
@@ -61,8 +61,8 @@
   "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
-      "activated": "",
-      "deactivated": "",
+      "activated": "󰅶",
+      "deactivated": "󰛊",
     },
   },
   "tray": {
