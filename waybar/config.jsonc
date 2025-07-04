@@ -4,7 +4,6 @@
 //   \ V  V / (_| | |_| | |_) | (_| | |
 //    \_/\_/ \__,_|\__, |_.__/ \__,_|_|
 //                 |___/
-//
 
 {
   // General settings
@@ -40,8 +39,8 @@
   // | |\/| |/ _ \ / _` | | | | |/ _ \/ __|
   // | |  | | (_) | (_| | |_| | |  __/\__ \
   // |_|  |_|\___/ \__,_|\__,_|_|\___||___/
-  //
 
+  // Workspaces
   "hyprland/workspaces": {
     "format": "{icon}",
     "on-click": "activate",
@@ -58,6 +57,7 @@
     "sort-by-number": true,
   },
 
+  // Idle inhibitor
   "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
@@ -65,15 +65,28 @@
       "deactivated": "󰛊",
     },
   },
+
+  // System tray
   "tray": {
     // "icon-size": 21,
     "spacing": 10,
   },
+
+  // Clock
   "clock": {
     // "timezone": "America/New_York",
     "format": "󰥔  {:%H:%M | %d/%m/%Y}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "calendar": {
+	"on-scroll": 1
+	    },
+    "actions":  {
+	"on-scroll-up": "shift_up",
+        "on-scroll-down": "shift_down"
+		}
   },
+
+  // System stats
   "cpu": {
     "format": "  {usage}% / ",
     "tooltip": false,
@@ -85,6 +98,8 @@
     "critical-threshold": 80,
     "format": " {temperatureC}°C",
   },
+
+  // Battery and power management
   "battery": {
     "states": {
       // "good": 95,
@@ -111,6 +126,8 @@
       "power-saver": "",
     },
   },
+
+  // Network
   "network": {
     // "interface": "wlp2*", // (Optional) To force the use of this interface
     "format-wifi": "{essid} ({signalStrength}%) ",
@@ -120,6 +137,8 @@
     "format-disconnected": "Disconnected ⚠",
     "format-alt": "{ifname}: {ipaddr}/{cidr}",
   },
+
+  // Audio
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
     "format": "{icon}  {volume}%",
@@ -137,6 +156,8 @@
     },
     "on-click": "pavucontrol",
   },
+
+  // Power button
   "custom/power": {
     "format": " 󰐥 ",
     "tooltip": false,
