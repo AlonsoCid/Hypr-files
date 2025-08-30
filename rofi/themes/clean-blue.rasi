@@ -44,7 +44,7 @@ Rofi configuration
 }
 
 configuration {
-    modes: "drun,calc";
+    modes: "drun,calc,kill:~/.config/rofi/rofi-kill";
     /*display-drun: " Apps ";*/
     show-icons: true;
 }

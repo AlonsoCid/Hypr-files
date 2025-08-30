@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+case "$@" in
+    # "Message Mode" tells rofi to just print the list
+    "")
+        # List processes (PID + command)
+        ps -u $USER -o pid,comm --sort=-start_time \
+            | awk 'NR>1 {print $1 "\t" $2}'
+        ;;
+    *)
+        # When user selects a line, extract PID and kill
+        pid=$(echo "$@" | awk '{print $1}')
+        if [ -n "$pid" ]; then
+            kill -9 "$pid"
+        fi
+        ;;
+esac
