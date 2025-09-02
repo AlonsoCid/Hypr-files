@@ -18,6 +18,8 @@ At the moment the installation should be done manually by cloning the repo and p
 - [NetworkManager](https://wiki.archlinux.org/title/NetworkManager): networkmanager and network-manager-applet
 - Screenshots: grim, slurp and swappy
 - Fonts:
-<pre> ```bash sudo pacman -S ttf-nerd-fonts-symbols noto-fonts-emoji noto-fonts-cjk ``` </pre>
+```bash 
+sudo pacman -S ttf-nerd-fonts-symbols noto-fonts-emoji noto-fonts-cjk 
+```
 - Theming (optional): nwg-look, materia-gtk-theme and sddm-sugar-candy-git
 
