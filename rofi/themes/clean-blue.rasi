@@ -44,7 +44,7 @@ Rofi configuration
 }
 
 configuration {
-    modes: "drun,calc,emoji:rofimoji,kill:~/.config/rofi/rofi-kill";
+    modes: "drun,calc,emoji:rofimoji --action copy --clipboarder wl-copy,kill:~/.config/rofi/rofi-kill";
     /*display-drun: " Apps ";*/
     show-icons: true;
 }

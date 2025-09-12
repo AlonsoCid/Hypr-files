@@ -14,6 +14,10 @@ At the moment the installation should be done manually by cloning the repo and p
 - Status bar: [Waybar](https://github.com/Alexays/Waybar/wiki/Module:-Hyprland)
 - [hyp-ecosistem](https://wiki.hypr.land/Hypr-Ecosystem/): [hyprpaper](https://wiki.hypr.land/Hypr-Ecosystem/hyprpaper/), [hypridle](https://wiki.hypr.land/Hypr-Ecosystem/hypridle/) and [hyprlock](https://wiki.hypr.land/Hypr-Ecosystem/hyprlock/)
 - App-launcher: Rofi, rofi-calc and rofimoji.
+You may need to give excecution permissions to the rofi-kill script:
+```bash
+chmod +x ~/.config/rofi/rofi-kill
+```
 - [Bluethoot](https://wiki.archlinux.org/title/Bluetooth): bluez, bluez-utils and blueman (require manual configuration through the terminal in Arch)
 - [NetworkManager](https://wiki.archlinux.org/title/NetworkManager): networkmanager and network-manager-applet
 - Screenshots: grim, slurp and swappy
