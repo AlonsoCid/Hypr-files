@@ -32,16 +32,16 @@ git clone https://github.com/AlonsoCid/Hypr-files.git
 ```
 
 ## Keybinds
-Super + Q = Open terminal
-Super + C = Close active window
-Super + E = Open file manager
-Super + S = Magic desktop
-Super + V = Toggle floating window
-Super + left click = resize window
-Super + right click = move window
-Super + scroll = Change virtual desktop
-Super + number = Change virtual desktop
-Super + shift + number = Move window to x virtual desktop
+Super + Q = Open terminal  
+Super + C = Close active window  
+Super + E = Open file manager  
+Super + S = Magic desktop  
+Super + V = Toggle floating window  
+Super + left click = resize window  
+Super + right click = move window  
+Super + scroll = Change virtual desktop  
+Super + number = Change virtual desktop  
+Super + shift + number = Move window to x virtual desktop  
 
 alt + space = rofi
 ctrl + tab = change rofi mode
