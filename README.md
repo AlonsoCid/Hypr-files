@@ -7,27 +7,47 @@ Just my dotfiles. This setup is design to be lightweight, minimal, quick to inst
 ![Example2](repo_screenshots/example2.png)
 
 ## Installation
-Install a minimal Arch installation, then copy the commands in order. Use archinstall and select the GPU drivers, networkmanager and pipewire.
+Install a minimal Arch installation, then copy the commands in order. Use archinstall and select the GPU drivers, network and audio manager.
 ```bash
 sudo pacman -S kitty neovim firefox hyprland 
 ```
 Now type hyprland, open firefox and copy the rest of the commands.
 ```bash
-sudo pacman -S git dunst xdg-desktop-portal-hyprland hyprpolkitagent qt5-wayland qt6-wayland
+sudo pacman -S git dunst xdg-desktop-portal-hyprland hyprpolkitagent qt5-wayland qt6-wayland dolphin
 ```
 This programs are not essential for running hyprland and can be changed, but you will need to modify the .files.
 
 ```bash
-sudo pacman -S waybar hyprpaper hypridle hyprlock rofi rofi-calc rofimoji bluez blue-utils blueman grim slurp swappy sddm
+sudo pacman -S waybar hyprpaper hypridle hyprlock rofi rofi-calc rofimoji bluez bluez-utils blueman pavucontrol grim slurp swappy sddm
 ```
 
 Regarding themes and fonts.
 ```bash
-sudo pacman -S ttf-nerd-fonts-symbols noto-fonts-emoji noto-fonts-cjk nwg-look materia-gtk-theme sddm-sugar-candy-git
+sudo pacman -S ttf-nerd-fonts-symbols noto-fonts-emoji noto-fonts-cjk nwg-look materia-gtk-theme
 ```
 
+Finally clone the repo and manually extract it inside your .config file (press "Alt+." to make hidden files visible in Dolphin).
+```bash
+git clone https://github.com/AlonsoCid/Hypr-files.git
+```
+
+## Keybinds
+Super + Q = Open terminal
+Super + C = Close active window
+Super + E = Open file manager
+Super + S = Magic desktop
+Super + V = Toggle floating window
+Super + left click = resize window
+Super + right click = move window
+Super + scroll = Change virtual desktop
+Super + number = Change virtual desktop
+Super + shift + number = Move window to x virtual desktop
+
+alt + space = rofi
+ctrl + tab = change rofi mode
+
 ## Requirements
-- Basics: hyprland, dunst, pipewire, xdg-desktop-portal-hyprland, hyprpolkitagent, qt5-wayland and qt6-wayland. (See more in [hyprland wiki](https://wiki.hypr.land/Useful-Utilities/Must-have/))
+- Basics: hyprland, dunst, xdg-desktop-portal-hyprland, hyprpolkitagent, qt5-wayland, qt6-wayland and dolphin. (See more in [hyprland wiki](https://wiki.hypr.land/Useful-Utilities/Must-have/))
 - Status bar: [Waybar](https://github.com/Alexays/Waybar/wiki/Module:-Hyprland)
 - [hyp-ecosistem](https://wiki.hypr.land/Hypr-Ecosystem/): [hyprpaper](https://wiki.hypr.land/Hypr-Ecosystem/hyprpaper/), [hypridle](https://wiki.hypr.land/Hypr-Ecosystem/hypridle/) and [hyprlock](https://wiki.hypr.land/Hypr-Ecosystem/hyprlock/). Hypridle crash on some setups, you will have to test it on your hardware, the problem is inherit to the program.
 - App-launcher: Rofi, rofi-calc and rofimoji.
