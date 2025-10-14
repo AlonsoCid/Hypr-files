@@ -43,7 +43,7 @@ Super + scroll = Change virtual desktop
 Super + number = Change virtual desktop  
 Super + shift + number = Move window to x virtual desktop  
 
-alt + space = rofi
+alt + space = rofi  
 ctrl + tab = change rofi mode
 
 ## Requirements
